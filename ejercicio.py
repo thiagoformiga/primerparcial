@@ -66,21 +66,6 @@ lista_personajes = parse_csv("DBZ.csv")
 '''2. Listar cantidad por raza: mostrará todas las razas indicando la cantidad de personajes que
 corresponden a esa raza.
 '''
-def contar_raza(lista:str):
-    razas = {}
-    for personaje in lista:
-        for raza in personaje["Raza"]:
-            if raza in razas:
-                razas["Raza"] += 1
-        else:
-            razas["Raza"] = 1
-
-    print("Cantidad de personajes por raza:")
-    for raza, cantidad in razas.items():
-        print(f"{raza}: {cantidad}")
-
-
-
 
 '''
 3. Listar personajes por raza: mostrará cada raza indicando el nombre y poder de ataque de cada
